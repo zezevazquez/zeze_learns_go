@@ -7,9 +7,11 @@ import "fmt"
 func main() {
 	// var card string = "Ace of Spades"
 	cards := []string{"Ace of Diamonds", newCard()}
-	fmt.Println(cards)
 	// when reassigning value we do not need :colon:
 	// : only used when initializing a variable
+	for i, card := range cards {
+		fmt.Println(i, card)
+	}
 }
 
 func newCard() string {
